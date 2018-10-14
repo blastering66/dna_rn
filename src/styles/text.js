@@ -70,6 +70,7 @@ export default StyleSheet.create({
     paddingTop: 10
   },
   logo_2: {
+    paddingTop: 10,
     fontFamily: 'AvenirNext-Regular',
     fontWeight: '400',
     color: 'black',

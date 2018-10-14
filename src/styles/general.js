@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-
+import { COLORS } from '../utils/values'
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -7,7 +7,7 @@ export default StyleSheet.create({
   },
   container_bottom: {
     height: 40,
-    backgroundColor: 'red',
+    backgroundColor: COLORS.colorAppTheme,
     position: 'absolute',
     alignItems: 'center',
     left: 0,
@@ -15,7 +15,7 @@ export default StyleSheet.create({
     bottom: 0
   },
   container_bg_bottom: {
-    height: 100,
+    height: 200,
     position: 'absolute',
     left: 0,
     right: 0,

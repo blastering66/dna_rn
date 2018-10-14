@@ -7,8 +7,8 @@ module.exports = {
 
   },
   COLORS: {
-    actionBarColor: 'red',
-    colorAppTheme: '#1A9B80',
+    actionBarColor: '#00bcfe',
+    colorAppTheme: '#00bcfe',
     colorBackground: '#E9E9EF',
     colorWhite: '#fff',
     colorGreen: '#1a9b80',
@@ -23,9 +23,8 @@ module.exports = {
     subtitle: '#92a4bf',
     trans: 'transparent',
     borderButton: '#259A7F',
-    button: '#0fb3e3',
+    button: '#00bcfe',
     textWhite: '#fff',
-    button: 'red',
     button_pressed: 'gray',
     label: '#000',
     gradientStart: '#652D90',

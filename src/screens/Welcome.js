@@ -5,6 +5,7 @@ import { fetcher, ENDPOINT } from '../utils/common'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import style_text from '../styles/text'
 import style_compound from '../styles/compound'
+import { COLORS } from '../utils/values'
 import styles from '../styles/general'
 import Button from '../components/Button'
 import Bar from '../components/Bar'
@@ -77,7 +78,7 @@ class Welcome extends Component {
           </Text>
         </TouchableWithoutFeedback>
         <View style={[styles.container, { flex: 1, flexDirection: 'row', alignItems: 'center' }]}>
-          <TouchableOpacity style={{ flex: 1, padding: 10, backgroundColor: 'red', marginRight: 10 }} onPress={() => this.updateAuth()}>
+          <TouchableOpacity style={{ flex: 1, padding: 10, backgroundColor: COLORS.button, marginRight: 10 }} onPress={() => this.updateAuth()}>
             <View>
               <Text style={[style_text.title, { textAlign: 'center' }]}>
               Facebook
@@ -85,7 +86,7 @@ class Welcome extends Component {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity style={{ flex: 1, padding: 10, backgroundColor: 'red', marginRight: 10 }} onPress={() => this.updateAuth()}>
+          <TouchableOpacity style={{ flex: 1, padding: 10, backgroundColor: COLORS.button, marginRight: 10 }} onPress={() => this.updateAuth()}>
             <View>
               <Text style={[style_text.title, { textAlign: 'center' }]}>
               Gmail
@@ -101,29 +102,19 @@ class Welcome extends Component {
 
         { !state.showSignupView && !state.showSigninView ? (
           <View style={{ paddingTop: 200, flex: 1, flexDirection: 'column', alignItems: 'center' }}>
-            <Image resizeMode={'contain'} style={styles.logo_black} source={require('../../assets/images/logo_black.png')} />
-            <Text style={style_text.logo_1}>WATCH WHAT YOU LIKE</Text>
-            <Text style={style_text.logo_2}>Faster streaming for you, explore us</Text>
+            <Image resizeMode={'contain'} style={styles.logo_black} source={require('../../assets/icons/icon.png')} />
+            <Text style={[style_text.logo_1, { paddingHorizontal: 50, textAlign: 'center' }]}>DAFTARKAN MEREK DAGANG ANDA</Text>
+            <Text style={style_text.logo_2}>Bersama kami proses lebih mudah dan cepat</Text>
           </View>
 
         ) : null }
-
-        <View style={styles.container_bg_top}>
-          <Image resizeMode={'cover'} style={{ width: width, height: 120, alignSelf: 'center' }} source={require('../../assets/images/img_welcome_top.png')} />
-        </View>
-
-        { state.showSignupView || state.showSigninView ? null : (
-          <View style={styles.container_bg_bottom}>
-            <Image resizeMode={'cover'} style={{ width: width,  height: 120, alignSelf: 'center' }} source={require('../../assets/images/img_welcome_bottom.png')} />
-          </View>
-        ) }
 
         { state.showSignupView ? (
           <View style={styles.container_signup}>
               <View style={{ paddingBottom: 50, flex: 1, flexDirection: 'column', alignItems: 'center' }}>
                 <Image resizeMode={'contain'} style={styles.logo_black} source={require('../../assets/images/logo_black.png')} />
-                <Text style={style_text.logo_1}>WATCH WHAT YOU LIKE</Text>
-                <Text style={style_text.logo_2}>Faster streaming for you, explore us</Text>
+                <Text style={[style_text.logo_1, { paddingHorizontal: 50, textAlign: 'center' }]}>DAFTARKAN MEREK DAGANG ANDA</Text>
+                <Text style={style_text.logo_2}>Bersama kami proses lebih mudah dan cepat</Text>
               </View>
               <TouchableOpacity style={{ width: 100, height: 20, alignSelf: 'center' }} onPress={() => self.setState({ showSignupView: false })}>
                 <Bar/>
@@ -184,8 +175,8 @@ class Welcome extends Component {
             <View style={styles.container_signup}>
               <View style={{ paddingBottom: 100, flex: 1, flexDirection: 'column', alignItems: 'center' }}>
                 <Image resizeMode={'contain'} style={styles.logo_black} source={require('../../assets/images/logo_black.png')} />
-                <Text style={style_text.logo_1}>WATCH WHAT YOU LIKE</Text>
-                <Text style={style_text.logo_2}>Faster streaming for you, explore us</Text>
+                <Text style={[style_text.logo_1, { paddingHorizontal: 50, textAlign: 'center' }]}>DAFTARKAN MEREK DAGANG ANDA</Text>
+                <Text style={style_text.logo_2}>Bersama kami proses lebih mudah dan cepat</Text>
               </View>
               <TouchableOpacity style={{ width: 100, height: 20, alignSelf: 'center' }} onPress={() => self.setState({ showSigninView: false })}>
                 <Bar/>
@@ -229,11 +220,11 @@ class Welcome extends Component {
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'row', position: 'absolute', right: 0, top: 20 }}>
-                  <TouchableOpacity style={{ padding: 10, backgroundColor: 'red', marginRight: 10, marginBottom: 10 }} onPress={() => this.updateAuth()}>
+                  <TouchableOpacity style={{ padding: 10, backgroundColor: COLORS.button, marginRight: 10, marginBottom: 10 }} onPress={() => this.updateAuth()}>
                     <Ionicons name="logo-facebook" size={18} color={"white"} />
                   </TouchableOpacity>
 
-                  <TouchableOpacity style={{ padding: 10, backgroundColor: 'red', marginRight: 10, marginBottom: 10 }} onPress={() => this.updateAuth()}>
+                  <TouchableOpacity style={{ padding: 10, backgroundColor: COLORS.button, marginRight: 10, marginBottom: 10 }} onPress={() => this.updateAuth()}>
                     <Ionicons name="logo-googleplus" size={18} color={"white"} />
                   </TouchableOpacity>
                 </View>
