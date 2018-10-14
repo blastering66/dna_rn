@@ -25,4 +25,4 @@ const Root = () => (
   </SafeAreaView>
 )
 
-AppRegistry.registerComponent('SkillTestRidhoMaulana', () => Root)
+AppRegistry.registerComponent('DNATrademark', () => Root)

@@ -1,4 +1,4 @@
-package com.litetv;
+package com.dna;
 
 import android.app.Application;
 

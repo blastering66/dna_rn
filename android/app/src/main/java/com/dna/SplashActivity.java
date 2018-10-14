@@ -1,4 +1,4 @@
-package com.litetv;
+package com.dna;
 
 import com.facebook.react.ReactActivity;
 import android.content.Intent;

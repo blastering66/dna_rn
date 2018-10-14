@@ -25,7 +25,7 @@ class Splash extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image resizeMode={'contain'} style={styles.container_logo} source={require('../../assets/images/logo_white.png')} />
+        <Image resizeMode={'contain'} style={styles.container_logo} source={require('../../assets/icons/icon.png')} />
       </View>
     );
   }
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'red',
+    backgroundColor: 'white',
   },
   container_logo: {
     width: 150,

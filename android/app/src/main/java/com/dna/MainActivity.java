@@ -1,4 +1,4 @@
-package com.litetv;
+package com.dna;
 
 import com.facebook.react.ReactActivity;
 import android.content.Intent; // <--- import
@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "SkillTestRidhoMaulana";
+        return "DNATrademark";
     }
 
     @Override
