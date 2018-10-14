@@ -5,12 +5,12 @@ const ios = Platform.OS === 'ios'
 
 const common = {
   API: {
-    URL: 'https://api.nytimes.com/svc',
+    URL: 'http://www.dnatrademark.com',
     API_KEY: '95ac032aee02495e89b21009b3ce3f15'
   },
 
   ENDPOINT: {
-    TOP_STORIES: '/topstories/v2/home.json'
+    MEMBER: '/api/member/'
   },
 
   fetcher(url, options, success, error) {
