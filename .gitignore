@@ -84,7 +84,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
-ios/assets/
 ios/main.jsbundle
 ios/main.jsbundle.meta
 
@@ -98,8 +97,6 @@ index.android.bundle.meta
 .gradle
 local.properties
 *.iml
-android/app/src/main/assets
-android/app/src/main/res
 
 # node.js
 #
